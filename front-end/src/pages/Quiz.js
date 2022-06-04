@@ -1,5 +1,6 @@
 import {useState} from "react";
 import {createQuiz} from "../api/quiz"
+import "./quiz.css";
 const Quiz = () => {
     const {questions,setQuestions} = useState([]);
     const titleOfCons = useState("");
@@ -33,9 +34,10 @@ const Quiz = () => {
         .catch(err => console.log(err));
     }
 
+    
+
     return(
-        <>
-        </>
+        <></>
     );
 }
 
