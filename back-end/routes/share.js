@@ -1,6 +1,5 @@
 const express = require('express')
-const router = expree
-const require = express.Router();
+const Router = express.Router();
 
 Router.get('/', (req, res) => {
     const {email} = req.body
@@ -10,4 +9,4 @@ Router.get('/', (req, res) => {
 
 })
 
-module.exports = router
+module.exports = Router
