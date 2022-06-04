@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const quizSchema = mongoose.Schema({
+const quiz = mongoose.Schema({
     quizId: {
         type: String,
         required: true
@@ -27,4 +27,4 @@ const quizSchema = mongoose.Schema({
     ]
 })
 
-module.exports = mongoose.model(quizSchema, quizSchema)
+module.exports = mongoose.model('quiz', quiz)
