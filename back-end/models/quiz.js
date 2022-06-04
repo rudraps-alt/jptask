@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const postSchema = mongoose.Schema({
+const quizSchema = mongoose.Schema({
     quizId: {
         type: String,
         required: true
@@ -27,4 +27,4 @@ const postSchema = mongoose.Schema({
     ]
 })
 
-module.exports = mongoose.model(quizSchema, PostSchema)
+module.exports = mongoose.model(quizSchema, quizSchema)
